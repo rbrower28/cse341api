@@ -1,0 +1,20 @@
+// LOCALHOST
+###
+GET http://localhost:3000/contacts
+###
+GET http://localhost:3000/contacts/63c3315171b67f331b9bc323
+###
+GET http://localhost:3000/contacts/63c3316471b67f331b9bc324
+###
+GET http://localhost:3000/contacts/63c3316e71b67f331b9bc325
+
+
+// RENDER
+###
+GET https://three41testapi.onrender.com/contacts
+###
+GET https://three41testapi.onrender.com/contacts/63c3315171b67f331b9bc323
+###
+GET https://three41testapi.onrender.com/contacts/63c3316471b67f331b9bc324
+###
+GET https://three41testapi.onrender.com/contacts/63c3316e71b67f331b9bc325
