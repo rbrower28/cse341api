@@ -1,20 +1,85 @@
 // LOCALHOST
 ###
 GET http://localhost:3000/contacts
+
 ###
-GET http://localhost:3000/contacts/63c3315171b67f331b9bc323
-###
-GET http://localhost:3000/contacts/63c3316471b67f331b9bc324
-###
-GET http://localhost:3000/contacts/63c3316e71b67f331b9bc325
+POST http://localhost:3000/contacts HTTP/1.1
+content-type: application/json
+
+{
+    "firstName":"John",
+    "lastName":"Cena",
+    "email":"johncena@test.com",
+    "favoriteColor":"none",
+    "birthday":"Apr 23"
+}
+
+### 
+DELETE http://localhost:3000/contacts/63cc48e4ecece8e2e867bb49 HTTP/1.1
+
+### Ryan to red
+PUT http://localhost:3000/contacts/63c3315171b67f331b9bc323 HTTP/1.1
+content-type: application/json
+
+{
+    "firstName":"Ryan",
+    "lastName":"Brower",
+    "email":"ryanbrower@test.com",
+    "favoriteColor":"red",
+    "birthday":"aug 28"
+}
+
+### Ryan back to green
+PUT http://localhost:3000/contacts/63c3315171b67f331b9bc323 HTTP/1.1
+content-type: application/json
+
+{
+    "firstName":"Ryan",
+    "lastName":"Brower",
+    "email":"ryanbrower@test.com",
+    "favoriteColor":"green",
+    "birthday":"aug 28"
+}
 
 
 // RENDER
 ###
 GET https://three41testapi.onrender.com/contacts
-###
-GET https://three41testapi.onrender.com/contacts/63c3315171b67f331b9bc323
-###
-GET https://three41testapi.onrender.com/contacts/63c3316471b67f331b9bc324
-###
-GET https://three41testapi.onrender.com/contacts/63c3316e71b67f331b9bc325
+
+### Create John Cena
+POST https://three41testapi.onrender.com/contacts HTTP/1.1
+content-type: application/json
+
+{
+    "firstName":"John",
+    "lastName":"Cena",
+    "email":"johncena@test.com",
+    "favoriteColor":"none",
+    "birthday":"apr 23"
+}
+
+### DELETE https://three41testapi.onrender.com/contacts/[id here] HTTP/1.1
+
+### Ryan to red
+PUT https://three41testapi.onrender.com/contacts/63c3315171b67f331b9bc323 HTTP/1.1
+content-type: application/json
+
+{
+    "firstName":"Ryan",
+    "lastName":"Brower",
+    "email":"ryanbrower@test.com",
+    "favoriteColor":"red",
+    "birthday":"aug 28"
+}
+
+### Ryan back to green
+PUT https://three41testapi.onrender.com/contacts/63c3315171b67f331b9bc323 HTTP/1.1
+content-type: application/json
+
+{
+    "firstName":"Ryan",
+    "lastName":"Brower",
+    "email":"ryanbrower@test.com",
+    "favoriteColor":"green",
+    "birthday":"aug 28"
+}
