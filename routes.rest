@@ -58,7 +58,8 @@ content-type: application/json
     "birthday":"apr 23"
 }
 
-### DELETE https://three41testapi.onrender.com/contacts/[id here] HTTP/1.1
+###
+DELETE https://three41testapi.onrender.com/contacts/63cc4bfa2dbf8ffcfefbb8c4 HTTP/1.1
 
 ### Ryan to red
 PUT https://three41testapi.onrender.com/contacts/63c3315171b67f331b9bc323 HTTP/1.1
