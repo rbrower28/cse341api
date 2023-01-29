@@ -5,7 +5,7 @@ const doc = {
     title: 'CSE341 API',
     description: 'Manage Contacts',
   },
-  host: 'localhost:3000',
+  host: 'https://three41testapi.onrender.com',
   schemes: ['http'],
 };
 
