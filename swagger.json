@@ -5,10 +5,10 @@
     "description": "Manage Contacts",
     "version": "1.0.0"
   },
-  "host": "localhost:3000",
+  "host": "three41testapi.onrender.com",
   "basePath": "/",
   "schemes": [
-    "http"
+    "https"
   ],
   "paths": {
     "/api-docs": {

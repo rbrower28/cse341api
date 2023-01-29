@@ -5,8 +5,8 @@ const doc = {
     title: 'CSE341 API',
     description: 'Manage Contacts',
   },
-  host: 'https://three41testapi.onrender.com',
-  schemes: ['http'],
+  host: 'three41testapi.onrender.com',
+  schemes: ['https'],
 };
 
 const outputFile = './swagger.json';
